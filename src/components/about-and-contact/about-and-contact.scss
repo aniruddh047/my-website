@@ -1,0 +1,148 @@
+.about-container{
+    background-image:url('../../assets/images/aboutme.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: inset 0px 5px 8px black;
+}
+.about-text-container{
+   width: 35%;
+    float: right;
+    margin-right: 20vw;
+    background-color: white;
+    color: black;
+    font-family: audimat;
+    margin: 10% 9vw 5% 5%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 80px #1b1b25;   
+}
+
+.about-text{
+margin:10%;
+}
+.quote-text{
+     font-family: cac_champagne;
+     font-size: 30px;
+     text-align: right;
+}
+.quote-content{
+    margin-bottom: 5px;
+}
+
+.bio{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.profile-pic{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 15% 10%;
+    box-shadow: 2px 15px 10px #1b1b25; 
+}
+
+@keyframes moveRight{
+0% {margin-left:1%;opacity:0 }
+100% {margin-left: 10%;opacity: 1 }
+}
+
+.contact-container{
+    /* background-color: #29298f; */
+    color: white;
+    background: url('../../assets/images/contact-col.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;    
+    box-shadow: inset 0px 5px 8px black;
+    height: 50vh;
+    font-family: audimat;
+}
+
+.social-logos{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin:1vw 1.5vw;
+    filter: grayscale(80%);
+    box-shadow: 5px 5px 5px #1b1b25;
+    transition: 0.3s linear;
+}
+
+.social-logos:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.contact-text{
+    margin-top: 4%;
+    font-size: 22px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.or-text{
+display: inline-block;
+    vertical-align: top;
+    padding: 12% 3%;
+}
+
+.social-section{
+    /*display: inline-block;*/
+    margin: 3vh auto 5vh;
+    width: 30%;
+}
+
+.copyright-info {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    box-shadow: 0 5px 8px black; 
+}
+
+@media only screen and (min-width : 768px)  and (max-width : 992px) {
+.social-section {
+    width: 67%;
+}
+.contact-text{
+        margin-top: 8%;
+}
+.social-logos{
+    filter:grayscale(0%);
+}
+}
+
+
+@media only screen and (min-width : 320px)  and (max-width : 767px){
+
+.about-container{
+    display: block;
+    // background: 
+}
+
+.about-text-container{
+    padding:2%;
+    display: block;
+    width:86%;
+}
+.social-logos{
+    filter:grayscale(0%);
+    margin: 2vw;
+}
+.profile-pic{
+    width:50%;
+    margin: 10%;
+}
+
+.social-section{
+    width: 80vw;
+    margin: 10px auto;
+}
+.contact-container{
+    background: #29298f;
+    height: 35vh;
+}
+}

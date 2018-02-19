@@ -1,0 +1,150 @@
+
+.skill-list-ul{
+    display: inline-block;
+    width:25%;
+    list-style-type: none;
+    color:white; 
+      font-family: audimat;
+      font-size: 25px;
+}
+.skill-name-list{
+      margin: 12% 0 12% 0%;
+}
+.skill-img-list{
+   margin: 5% 0 0 40%;
+}
+
+.skill-img{
+    width:50px;
+    height:50px;
+    border-radius:10px;
+}
+
+.skill-profc-list{
+    margin: 12% 0% 12% -30%;
+}
+
+.level{
+    height:30px;
+     color:white; 
+      font-family: audimat;
+      font-size: 18px;
+      margin:0 0% 0 17%;
+      padding-right:3%;
+      border-right:1px dotted white; 
+}
+.levelDiv{
+    position: absolute;
+    margin:20px 0 0 60%;
+}
+
+.skill-container{
+background-color: #2a2a6b;
+overflow: hidden;
+box-shadow: inset 0px 5px 8px black;
+}
+
+.image-div {
+    border-radius: 20px;
+    z-index: 3;
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+.image-div:hover{
+    transition: opacity 2s;
+    opacity: 0;
+}
+.skill-item:hover{
+    transform: rotateY(180deg);
+}
+.skills-heading {
+    color: rgb(42, 42, 107);
+}
+
+.skills-block {
+    margin: 50px auto;
+    width: 65vw;
+}
+
+.skill-item {
+    display: inline-block;
+    margin: 30px 55px;
+    background-color: silver;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: black 7px 7px 5px;
+    transition: 1s linear;
+}
+
+.skill-info {
+    transform: translateY(-102%) rotateY(180deg);
+    padding: 0px 5px;
+    z-index: 2;
+    background-color: aliceblue;
+    height: 150px;
+    border-radius: 20px;
+    font-family: audimat;
+    font-weight: bold;
+}
+
+.skill-backface {
+    padding: 25px 10px;
+}
+
+.skill-name {
+  text-align: center;  
+}
+.proficiency {
+    margin-top: 0;
+}
+@media only screen and (min-width : 768px)  and (max-width : 992px) {
+.skill-img-list {
+    margin: -0.5% 0 0 40%;
+}
+
+.skill-profc-list {
+    margin-left: -15%;
+}
+
+}
+
+
+@media only screen and (min-width : 320px)  and (max-width : 767px){
+.skill-profc-list {
+        margin: 20% 10% 32% -150%;
+}
+
+.skill-name-list{
+    display: none;
+}
+
+.skill-name-container{
+   display: none;
+}
+.progress-bar{
+    font-size: 13px;
+}
+
+}
+
+.tbody-block{
+    width:80%; 
+    margin: 30px auto;
+    color: white;
+    font-family: audimat;
+    font-size: 25px;
+}
+
+.skill-img-container{
+     width:20%;
+}
+
+.skill-name-container{
+   width:20%;
+}
+
+.prog-container{
+  width:60%;
+}

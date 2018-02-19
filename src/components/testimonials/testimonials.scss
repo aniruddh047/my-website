@@ -1,0 +1,41 @@
+.testimonials-container {
+    background-image: url('../../assets/images/greyredbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: audimat;
+    overflow: hidden;
+    box-shadow: inset 0px 5px 8px black;
+}
+
+.testimonial-block {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30vw;
+    margin: 5vw;
+    display: inline-block;
+    min-height: 30vh;
+    vertical-align: top;
+}
+
+.testimonials-heading {
+    text-align: center;
+    font-family: audimat;
+    font-size: 60px;
+    margin-top: 50px;
+    color: #e21a24;
+    box-shadow: black 1px 5px 8px;
+    background: white;
+}
+
+.testimonial-body {
+    padding: 20px 0;
+}
+
+
+@media only screen and (min-width : 320px)  and (max-width : 767px){
+    .testimonial-block {
+        width: 80vw;
+    }
+}

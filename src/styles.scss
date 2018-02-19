@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: leagueGothicR;
+    src: url(./assets/fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: lobster2BI;
+    src: url(./assets/fonts/LobsterTwo-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: audimat;
+    src: url(./assets/fonts/AUdimat-Regular.ttf);
+}
+
+@font-face {
+    font-family: cac_champagne;
+    src: url(./assets/fonts/cac_champagne.ttf);
+}
+
+/* body {
+   cursor : url('./assets/images/cursor.cur') , auto;
+} */
+body {
+    margin: 0;
+}
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px #1b1b25;
+    background: white url('./assets/images/top-button.svg') no-repeat;
+    background-size: cover;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .scroll-top-button {
+        display: none;
+    }
+}
+
+.header-n-body1 {
+    background: url('assets/images/page-bg2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.component-pointers {
+    position: relative;
+    /* top = ~ height of header */
+    top: -100px;
+}
+
+.component-heading {
+    text-align: center;
+    font-family: audimat;
+    font-size: 60px;
+    margin-top: 50px;
+    box-shadow: black 1px 5px 8px;
+    background: white;
+}
+
+.ripple-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 39%;
+    top: 50%;
+    width: 150px;
+    height: 120px;
+    margin-left: -60px;
+    margin-top: -60px;
+    background: orangered;
+    border-radius: 100%;
+    opacity: .6;
+    transform: scale(0);
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.ripple-container:not(:active):after {
+    animation: ripple 1s;
+}
+
+.ripple-container::after {
+    /*visibility: hidden;*/
+}
+
+.ripple-container:focus::after {
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(206, 39, 53);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
