@@ -1,28 +1,11 @@
-// #mob-img{
-//     display: none;
-//     background: url("../../assets/images/mob-wallpaper.jpg") no-repeat ;
-//     background-size:cover; 
-//     height: 220px;
-// }
 .nameTextDiv {
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    height: 230px;
-    width: 20%;
-    background-color: #f32323;
-    color: white;
-    border-radius: 50%;
-    opacity: 0;
-    padding: 20px;
-    animation: fadeEntry 4s;
-    z-index: 10;
-    font-family: lobster2BI;
-    font-size: 50px;
-    visibility: visible;
     text-align: center;
-    text-shadow: 0px 2px 1px #1b1b25;
-    cursor: default;
+    font-family: roboto;
+    font-size: 50px;
+    width: 50vw;
+    margin: auto;
+    padding: 20vh 0 0 0;
+    color: white;
 }
 
 @keyframes fadeEntry {
@@ -39,23 +22,18 @@
 
 .scroll-styling {
     position: absolute;
-    top: 65%;
+    bottom: 10vh;
     left: 30%;
     height: 100px;
     width: 40%;
-    color: #f32323;
-    animation: fadeEntry 4s;
-    animation-delay: 3s;
-    z-index: 10;
-    font-family: leagueGothicR;
-    font-size: 20px;
     text-align: center;
-    opacity: 0;
+    // opacity: 0.7;
 }
 
 .scroll-image {
-    height: 30%;
-    width: 20px;
+    height: 20vh;
+    width: 20vw;
+    transform: rotate(180deg);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -79,5 +57,39 @@
     .scroll-styling {
         top: 40%;
         height: 70px;
+    }
+}
+
+@mixin move ($delay){
+    animation: move 1s linear;
+    animation-delay: $delay;
+    position: relative;
+}
+
+@mixin from(){
+
+}
+.word-one {
+    @include move(1s);
+}
+
+.word-two {
+    @include move(1.5s);
+}
+
+.word-three {
+    @include move(2s);
+}
+
+.word-four {
+    @include move(2.5s);
+}
+
+@keyframes move {
+    0% {
+        left: -35vw;
+    }
+    100% {
+        left: 0;
     }
 }

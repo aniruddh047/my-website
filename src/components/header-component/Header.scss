@@ -1,15 +1,17 @@
 .header-styling{
     padding:10px 0px;
-    background: rgba(0,0,0,0.5); 
     box-shadow: 0px 5px 8px black;
     width: 100vw;
+    height: 60px;
     position: fixed;
     z-index: 100;
+    display: none;
     transition: background-color 1s;
 }
 .header-styling-alt {
     box-shadow: none;
-    background: black;
+    display: block;
+    background: rgb(10, 10, 10);
 }
 .logo-styling{
     position: relative;
@@ -20,12 +22,11 @@
 }
 .nav-links{
     display: inline-block;
-    color: white;
-    font-family: audimat;
+    color: crimson;
+    font-family: roboto;
     padding: 10px 30px;
-    margin: 0px 40px;
-    font-size: 15px;
-    border:1px solid white;
+    // margin: 0px 40px;
+    font-size: 12px;
     transition: color 0.5s, background-color 0.5s linear;
 }
 .nav-links:hover{

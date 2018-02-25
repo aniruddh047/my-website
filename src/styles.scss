@@ -19,11 +19,25 @@
     src: url(./assets/fonts/cac_champagne.ttf);
 }
 
-/* body {
-   cursor : url('./assets/images/cursor.cur') , auto;
-} */
+@font-face {
+    font-family: roboto;
+    src: url(./assets/fonts/Roboto-regular.ttf);
+}
+
 body {
     margin: 0;
+}
+
+@mixin xs(){
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+    } 
+}
+
+@mixin sm(){
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @content;
+    } 
 }
 
 .scroll-top-button {
@@ -38,16 +52,13 @@ body {
     background-size: cover;
     display: none;
     cursor: pointer;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .scroll-top-button {
-        display: none;
+    @include xs(){
+         display: none;
     }
 }
 
 .header-n-body1 {
-    background: url('assets/images/page-bg2.jpg') no-repeat;
+    background: url('assets/images/tokyotimelapse.gif') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -112,17 +123,4 @@ body {
 
 .ripple-container:focus::after {
     visibility: visible;
-}
-
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(206, 39, 53);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: black;
 }

@@ -34,19 +34,19 @@ render() {
     <audio id="audio">
       <source src={logoSound} type="audio/mpeg" />
     </audio>
-        <span className="logo-styling"><img className="image-styling" alt="main-logo" src= {a_logo} onClick={this.play}/></span>
+        <span className="logo-styling"><img className="image-styling" alt="main-logo"  onClick={this.play}/></span>
         <span><img src={more_btn} onClick={toggleMobileMenu} alt="more-options" id="js-more-options" className="more-options"/></span>
         <nav id="js-navbar">
           <ul>
             <li  onClick={() =>{redirect("js-skills-pointer");}} className="nav-links ripple-container">
             SKILLS
-            </li>
+            </li>/
              <li onClick={() => {redirect( "js-testimonials-pointer");}} className="nav-links ripple-container">
              TESTIMONIALS
-            </li>
+            </li>/
             <li onClick={() => {redirect("js-about-pointer");}} className="nav-links ripple-container">
             ABOUT
-            </li>
+            </li>/
              <li onClick={() => {redirect("contact-section");}} className="nav-links ripple-container">
             CONTACT
             </li>

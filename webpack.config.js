@@ -1,7 +1,12 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
 module.exports = {
     entry: __dirname +'/src/index.js',
+    devServer: {
+        contentBase: './dest',
+        hot: true
+      },
     module: {
         loaders: [
             {
@@ -25,7 +30,8 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('style.css'),
-        new UglifyJSPlugin()
+        new UglifyJSPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ],
     output: {
         filename: 'bundle.js',
